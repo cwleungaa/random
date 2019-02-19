@@ -2,7 +2,7 @@ import random
 
 r = random.randint(1,100)
 
-i = 1
+i = 0
 
 while True:
 
@@ -12,7 +12,7 @@ while True:
 
 	if guess == r :
 		print('終於猜對了')
-		print('你共猜了',i,'次')
+		print('你共猜了',i+1,'次')
 		break
 
 	elif guess < r:
@@ -21,4 +21,4 @@ while True:
 	else:
 		print('你猜的數字比答案還大')
 		i = i + 1
-print('你共猜了',i,'次')
+	print('你共猜了',i,'次')
