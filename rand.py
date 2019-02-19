@@ -1,6 +1,11 @@
 import random
 
-r = random.randint(1,100)
+start = input('請輸入猜數字範圍開始值: ')
+end = input('請輸入猜數字範圍結束值: ')
+start = int (start)
+end = int (end)
+
+r = random.randint(start,end)
 
 i = 0
 
@@ -21,4 +26,4 @@ while True:
 	else:
 		print('你猜的數字比答案還大')
 		i = i + 1
-	print('你共猜了',i,'次')
+	print('你共猜了', i, '次')
