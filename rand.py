@@ -21,3 +21,4 @@ while True:
 	else:
 		print('你猜的數字比答案還大')
 		i = i + 1
+print('你共猜了',i,'次')
